@@ -39,8 +39,8 @@ Load flights on search
   > https://travel-api12.herokuapp.com/filter/1?name=Indigo
 
 > cost filter
-  > http://localhost:6700/filter/1?lprice=3649&hprice=7245
-  > https://travel-api12.herokuapp.com/filter/1?lprice=3649&hprice=7245
+  > http://localhost:6700/filter_cost/1?lprice=3649&hprice=7245
+  > https://travel-api12.herokuapp.com/filter_cost/1?lprice=3649&hprice=7245
 
  data respect to flight name and cost 
 
@@ -73,14 +73,14 @@ Load trains on search
 
 > Popular filter 
   data respect to AC trains
-  > http://localhost:6700/filter/2?class=3AC
-  > https://travel-api12.herokuapp.com/filter/2?class=3AC
+  > http://localhost:6700/filter_class/2?class=3AC
+  > https://travel-api12.herokuapp.com/filter_class/2?class=3AC
 
  
 
 > cost filter
-  > http://localhost:6700/filter/2?lprice=2255&hprice=16346
-  > https://travel-api12.herokuapp.com/filter/2?lprice=2255&hprice=16346
+  > http://localhost:6700/filter_cost/2?lprice=2255&hprice=16346
+  > https://travel-api12.herokuapp.com/filter_cost/2?lprice=2255&hprice=16346
 
  data respect to train type and cost 
 
@@ -95,12 +95,12 @@ Page 4
 filter
 
 >Load from_destination dropdown
-  > http://localhost:6700/from_destination
-  > https://travel-api12.herokuapp.com/from_destination
+  > http://localhost:6700/fromDestination
+  > https://travel-api12.herokuapp.com/fromDestination
 
 >Load to_destination data wrt from_destination dropdown
-  > http://localhost:6700/toDestination_details/3?from=NewDelhi
-  > https://travel-api12.herokuapp.com/toDestination_details/3?from=NewDelhi
+  > http://localhost:6700/toDestination_details/3?from=Chennai
+  > https://travel-api12.herokuapp.com/toDestination_details/3?from=Chennai
 
 Load bus on search
   > http://localhost:6700/bussearch/3?from=Chennai&to=Bangalore,
@@ -108,20 +108,20 @@ Load bus on search
 
 > Popular filter 
   data respect to AC bus
-  > http://localhost:6700/filter/3?class=AC_sleeper
-  > https://travel-api12.herokuapp.com/filter/3?class=AC_sleeper
+  > http://localhost:6700/filter_class_hrs/3?class=AC_sleeper
+  > https://travel-api12.herokuapp.com/filter_class_hrs/3?class=AC_sleeper
 
    data respect to class and hpurs of travel
-  > http://localhost:6700/filter/3?class=AC_sleeper&hours=6hrs_30min  
-  > https://travel-api12.herokuapp.com/filter/3?class=AC_sleeper&hours=6hrs_30min 
+  > http://localhost:6700/filter_class_hrs/3?class=AC_sleeper&hours=6hrs_30min 
+  > https://travel-api12.herokuapp.com/filter_class_hrs/3?class=AC_sleeper&hours=6hrs_30min 
 
     data respect to hours of travel
   > http://localhost:6700/filter/3?hours=6hrs_30min 
   > https://travel-api12.herokuapp.com/filter/3?hours=6hrs_30min
 
 > cost filter
-  > http://localhost:6700/filter/3?lprice=750&hprice=1700
-  > https://travel-api12.herokuapp.com/filter/3?lprice=750&hprice=1700
+  > http://localhost:6700/filter_cost/3?lprice=750&hprice=1700
+  > https://travel-api12.herokuapp.com/filter_cost/3?lprice=750&hprice=1700
 
  data respect to bus class and cost 
 
@@ -145,32 +145,32 @@ Load hotels on search
 
 > Popular filter 
   data respect to hotels providing free beakfast
-  > http://localhost:6700/filter/4?breakfast=Free
-  > https://travel-api12.herokuapp.com/filter/4?breakfast=Free
+  > http://localhost:6700/filter_search/4?breakfast=Free
+  > https://travel-api12.herokuapp.com/filter_search/4?breakfast=Free
 
    list hotels giving refundable option
-  > http://localhost:6700/filter/4?isRefundable=yes  
-  > https://travel-api12.herokuapp.com/filter/4?isRefundable=yes
+  > http://localhost:6700/filter_search/4?isRefundable=yes  
+  > https://travel-api12.herokuapp.com/filter_search/4?isRefundable=yes
 
     data respect to star category
-  > http://localhost:6700/filter/4?stars=5
-  > https://travel-api12.herokuapp.com/filter/4?stars=5
+  > http://localhost:6700/filter_search/4?stars=5
+  > https://travel-api12.herokuapp.com/filter_search/4?stars=5
 
 > cost filter
-  > http://localhost:6700/filter/4?lprice=3426&hprice=6034
-  > https://travel-api12.herokuapp.com/filter/4?lprice=3426&hprice=6034
+  > http://localhost:6700/filter_cost/4?lprice=3426&hprice=6034
+  > https://travel-api12.herokuapp.com/filter_cost/4?lprice=3426&hprice=6034
 
  data respect to rating and cost 
 
-  > http://localhost:6700/filter/3?lcost=lprice=3426&hprice=6034&rating=3.5/5
-  > https://travel-api12.herokuapp.com/filter/3?lcost=lprice=3426&hprice=6034&rating=3.5/5
+  > http://localhost:6700/filter_search/4?lprice=3426&hprice=6034&rating=3.5
+  > https://travel-api12.herokuapp.com/filter_search/4?lprice=3426&hprice=6034&rating=3.5
 
  filter wrt hotel rating
-  > http://localhost:6700/filter/4?rating=4.5/5
-  > https://travel-api12.herokuapp.com/filter/4?rating=4.5/5
+  > http://localhost:6700/filter_search/4?rating=4.5
+  > https://travel-api12.herokuapp.com/filter_search/4?rating=4.5
   filter wrt hotel facilities
-  > http://localhost:6700/filter/4?faclities=Swimming
-  > https://travel-api12.herokuapp.com/filter/4?faclities=Swimming
+  > http://localhost:6700/filter_search/4?faclities=Swimming
+  > https://travel-api12.herokuapp.com/filter_search/4?faclities=Swimming
 
 
 Page 6

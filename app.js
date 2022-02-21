@@ -90,7 +90,7 @@ app.get('/flightsearch/1',(req,res) => {
 //data respect to flightname and stops
 app.get('/filter/1',(req,res) => {
     let categoryId  = 1
-    let stops = req.query.Stop
+    let stops = req.query.stop
     let flight_name = req.query.name
     
     let query = {};
@@ -111,7 +111,7 @@ app.get('/filter/1',(req,res) => {
 })
 
 //cost filter
-app.get('/filter/:id',(req,res) => {
+app.get('/filter_cost/:id',(req,res) => {
     let sort = {price:1}
     let categoryId  = Number(req.params.id) 
     let lprice = Number(req.query.lprice)
@@ -190,7 +190,7 @@ app.get('/trainsearch/2',(req,res) => {
 })
 
 //Filter wrt class 
-app.get('/filter/2',(req,res) => {
+app.get('/filter_class/2',(req,res) => {
     let categoryId  = 2
     let class_name = req.query.class
      
@@ -257,13 +257,13 @@ app.get('/bussearch/3',(req,res) => {
 })
 
 //Filter wrt class 
-app.get('/filter/3',(req,res) => {
+app.get('/filter_class_hrs/3',(req,res) => {
     let categoryId  = 3
     let class_name = req.query.class
     let hrs = req.query.hours
      
     let query = {};
-    if(class_name && hours){
+    if(class_name && hrs){
         query = {class:class_name,hours:hrs,"category_id":categoryId}
     }
    
@@ -341,13 +341,16 @@ app.get('/hotelsearch/4',(req,res) => {
     })
 })
 
-//Filter wrt free breakfast,refundable option,star category,rating,facilites
-app.get('/filter/4',(req,res) => {
-    let categoryId  = 4
+//Filter wrt free breakfast,refundable option,star category,rating,facilites,cost filter
+app.get('/filter_search/4',(req,res) => {
+    let sort = {price:1}
+    let categoryId  = 4 
+    let lprice = Number(req.query.lprice) 
+    let hprice = Number(req.query.hprice)    
     let breakfast = req.query.breakfast
     let stars = Number(req.query.stars)
     let refundable = req.query.isRefundable
-    let rating = Number(req.query.rating)
+    let rating = req.query.rating
     let facilites = req.query.faclities
      
     let query = {};
@@ -364,6 +367,9 @@ app.get('/filter/4',(req,res) => {
     else if(breakfast && rating){
         query = {breakfast:breakfast,rating:rating,"category_id":categoryId}
     }
+    else if(refundable){
+        query = {isRefundable:refundable,"category_id":categoryId}
+    }
     else if(rating){
         query = {rating:rating,"category_id":categoryId}
     }
@@ -374,31 +380,16 @@ app.get('/filter/4',(req,res) => {
         query = {breakfast:breakfast,"category_id":categoryId}
     }
     else if(facilites){
-        query = {Faclities:facilites,"category_id":categoryId}
+        query = {faclities:facilites,"category_id":categoryId}
     }
    
-    
-    db.collection('traveldata').find(query).toArray((err,result) =>{
-        if(err) throw err;
-        res.send(result)
-    })
-})
-
-// filter wrt cost and rating
-app.get('/filter/4',(req,res) => {
-    let sort = {price:1}
-    let categoryId  = 4 
-    let lprice = Number(req.query.lprice)
- 
-    let hprice = Number(req.query.hprice)
-    let rating = Number(req.query.rating)
-    let query = {}
     if(lprice&hprice&rating){
         query = {"category_id":categoryId,"rating":rating,
          
             $and:[{price:{$gt:lprice,$lt:hprice}}]
         }
     }  
+    
     if(req.query.sort){
         sort = {price:req.query.sort,"category_id":categoryId}
     }
@@ -409,6 +400,32 @@ app.get('/filter/4',(req,res) => {
         res.send(result)
     })
 })
+
+// filter wrt cost and rating
+// app.get('/filter/4',(req,res) => {
+//     let sort = {price:1}
+//     let categoryId  = 4 
+//     let lprice = Number(req.query.lprice)
+ 
+//     let hprice = Number(req.query.hprice)
+//     let rating = Number(req.query.rating)
+//     let query = {}
+//     if(lprice&hprice&rating){
+//         query = {"category_id":categoryId,"rating":rating,
+         
+//             $and:[{price:{$gt:lprice,$lt:hprice}}]
+//         }
+//     }  
+//     if(req.query.sort){
+//         sort = {price:req.query.sort,"category_id":categoryId}
+//     }
+          
+
+//     db.collection('traveldata').find(query).sort(sort).toArray((err,result) =>{
+//         if(err) throw err;
+//         res.send(result)
+//     })
+// })
 
 //holiday packages search
 app.get('/holiday_packagesearch/5',(req,res) => {
@@ -442,12 +459,12 @@ app.get('/reviewdetail/:id',(req,res) => {
     let id =Number(req.query.id)
     let query = {}
     if(id){
-        query = {"category_id":categoryId, id:id        
+        query = {"category_id":categoryId, id:id       
           
         }
     }  
     if(req.query.sort){
-        sort = {price:req.query.sort,"category_id":categoryId}
+        sort = {id:req.query.sort,"category_id":categoryId}
     }
           
 
