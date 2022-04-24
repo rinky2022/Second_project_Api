@@ -4,7 +4,7 @@
         "id":1,
         "name":"Indigo",
         "image":"https://i.ibb.co/6mqxZSN/indigologo.jpg",
-        "route":"New Delhi to Bangalore",
+        "route":"NewDelhi to Bangalore",
         "from":"NewDelhi",
         "to":"Bangalore",
         "category_id":1,
@@ -29,7 +29,7 @@
         "id":2,
         "name":"Indigo",
         "image":"https://i.ibb.co/6mqxZSN/indigologo.jpg",
-        "route":"New Delhi to Bangalore",
+        "route":"NewDelhi to Bangalore",
         "from":"NewDelhi",
         "to":"Bangalore",
         "category_id":1,
@@ -60,7 +60,7 @@
         "category_id":1,
         "cityid":1,
         "class":"Economy",
-        "passengers":"1 Adult",
+        "passengers":"1Adult",
         "trip type":"One Way",
         "depart":"Mon Jan 24,2022",
         "return":"",
@@ -85,7 +85,7 @@
         "category_id":1,
         "cityid":1,
         "class":"Premium",
-        "passengers":"2Adult,1child",
+        "passengers":"2Adult-1child",
         "trip type":"One Way",
         "depart":"Tue Jan 28,2022",
         "return":"Tue jan 28,2022",
@@ -93,7 +93,7 @@
         "departtime":"9:05",
         "returntime":"11:50",
         "hours":"2hr 45min",
-        "Stop":"Non-Stop",
+        "Stop":"Non-stop",
         "departTerminal":"Terminal2",
         "returnTerminal":"",
         "baggage":"ADULT,CHILD",
@@ -110,7 +110,7 @@
         "category_id":1,
         "cityid":1,
         "class":"Premium",
-        "passengers":"2Adult,1 children",
+        "passengers":"2Adult-1child",
         "trip type":"One Way",
         "depart":"Tue Jan 28,2022",
         "return":"Tue jan 28,2022",
@@ -136,7 +136,7 @@
         "category_id":1,
         "cityid":2,
         "class":"Economy",
-        "passengers":" 1 Adult",
+        "passengers":" 1Adult",
         "trip type":"One way",
         "depart":"Wed Mar 7,2022",
         "return":"Wed Mar 7,2022",
@@ -161,7 +161,7 @@
         "category_id":1,
         "cityid":3,
         "class":"Economy",
-        "passengers":"3 Adult , 1 infant",
+        "passengers":"3Adult-1infant",
         "trip type":"one way",
         "depart":"Fri Mar 28,2022",
         "return":"",
@@ -169,7 +169,7 @@
         "departtime":"9:35",
         "returntime":"10:55",
         "hours":"1 hr 20 min",
-        "Stop":"Non Stop",
+        "Stop":"Non-stop",
         "departTerminal":"Terminal2",
         "returnTerminal":"Terminal1",
         "baggage":"ADULT",
@@ -186,7 +186,7 @@
         "category_id":1,
         "cityid":3,
         "class":"Economy",
-        "passengers":"3 Adult , 1 infant",
+        "passengers":"3Adult-1infant",
         "trip type":"one way",
         "depart":"Fri Mar 28,2022",
         "return":"",
@@ -204,14 +204,14 @@
     {
         "id":9,
         "name":"GoFirst",
-        "image":"Image/Go-Firstlogo.jpg",
+        "image":"https://i.ibb.co/zJKDDYZ/Go-Firstlogo.jpg",
         "route":"Kochi to Chennai",
         "from":"Kochi",
         "to":"Chennai",
         "category_id":1,
         "cityid":3,
         "class":"Economy",
-        "passengers":"4 Adult",
+        "passengers":"4Adult",
         "trip type":"one way",
         "depart":"Fri Mar 28,2022",
         "return":"",
@@ -236,7 +236,7 @@
         "category_id":1,
         "cityid":3,
         "class":"Economy",
-        "passengers":"4 Adult",
+        "passengers":"4Adult",
         "trip type":"one way",
         "depart":"Fri Mar 28,2022",
         "return":"",
@@ -261,7 +261,7 @@
         "category_id":1,
         "cityid":3,
         "class":"Economy",
-        "passengers":"1 Adult",
+        "passengers":"1Adult",
         "trip type":"one way",
         "depart":"Fri Mar 7,2022",
         "return":"",
@@ -269,7 +269,7 @@
         "departtime":"8:00",
         "returntime":"10:40",
         "hours":"2 hr 40 min",
-        "Stop":"Non Stop",
+        "Stop":"Non-stop",
         "departTerminal":"Terminal3",
         "returnTerminal":"",
         "baggage":"ADULT",
@@ -281,13 +281,13 @@
         "id":12,
         "name":"Spicejet",
         "image":"https://i.ibb.co/DRvvvqQ/spicejetlogo.jpg",
-        "route":"New Delhi to Chennai",
-        "from":"New Delhi",
+        "route":"NewDelhi to Chennai",
+        "from":"NewDelhi",
         "to":"Chennai",
         "category_id":1,
         "cityid":3,
         "class":"Economy",
-        "passengers":"4 Adult",
+        "passengers":"4Adult",
         "trip type":"one way",
         "depart":"Fri Mar 28,2022",
         "return":"",
@@ -295,7 +295,7 @@
         "departtime":"6:15",
         "returntime":"9:10",
         "hours":"2 hr 55 min",
-        "Stop":"Non Stop",
+        "Stop":"Non-stop",
         "departTerminal":"Terminal3",
         "returnTerminal":"Terminal1",
         "baggage":"ADULT",
@@ -306,13 +306,13 @@
         "id":13,
         "name":"Indigo",
         "image":"https://i.ibb.co/6mqxZSN/indigologo.jpg",
-        "route":"New Delhi to Bangalore",
+        "route":"NewDelhi to Bangalore",
         "from":"NewDelhi",
         "to":"Bangalore",
         "category_id":1,
         "cityid":1,
         "class":"Economy",
-        "passengers":"1 Adult",
+        "passengers":"1Adult",
         "trip type":"One Way",
         "depart":"Mon Jan 24,2022",
         "return":"",
@@ -336,8 +336,8 @@
         "to":"Bangalore",
         "category_id":2,
         "cityid":4,
-        "class":"First class AC",
-        "passengers":"",
+        "class":"1AC",
+        "passengers":"1Adult",
         "trip type":"",
         "depart":"Sat Feb22 ,2022",
         "return":"",
@@ -349,7 +349,8 @@
         "departstation":"Thripunithura(TRTR)",
         "returnstation":"Bangalore City Jn(SBC)",
         "hours":"13 hrs 36 min",
-        "seats":"AVAILABLE 1"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":1
     },
     {
         "id":15,
@@ -372,7 +373,8 @@
         "departstation":"Thripunithura(TRTR)",
         "returnstation":"Bangalore City Jn(SBC)",
         "hours":"13 hrs 36 min",
-        "seats":"AVAILABLE 6"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":6
     },
     {
         "id":16,
@@ -395,7 +397,8 @@
         "departstation":"Thripunithura(TRTR)",
         "returnstation":"Bangalore City Jn(SBC)",
         "hours":"13 hrs 36 min",
-        "seats":"AVAILABLE 12"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":12
     },
     {
         "id":17,
@@ -405,7 +408,7 @@
         "to":"Bangalore",
         "category_id":2,
         "cityid":4,
-        "class":"2nd Sitting",
+        "class":"Executive-Chair",
         "passengers":"",
         "trip type":"",
         "depart":"Sat Feb22 ,2022",
@@ -418,7 +421,8 @@
         "departstation":"Thripunithura(TRTR)",
         "returnstation":"Bangalore City Jn(SBC)",
         "hours":"13 hrs 36 min",
-        "seats":"AVAILABLE 20"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":20
     },
     {
         "id":18,
@@ -428,7 +432,7 @@
         "to":"Bangalore",
         "category_id":2,
         "cityid":4,
-        "class":"SL",
+        "class":"Sleeper",
         "passengers":"",
         "trip type":"",
         "depart":"Sat Feb22 ,2022",
@@ -441,7 +445,8 @@
         "departstation":"Thripunithura(TRTR)",
         "returnstation":"Bangalore City Jn(SBC)",
         "hours":"13 hrs 36 min",
-        "seats":"AVAILABLE 34"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":34
     },
     {
         "id":19,
@@ -451,7 +456,7 @@
         "to":"Bangalore",
         "category_id":2,
         "cityid":4,
-        "class":"2nd sitting",
+        "class":"2AC",
         "passengers":"",
         "trip type":"",
         "depart":"Sat Feb22 ,2022",
@@ -464,7 +469,8 @@
         "departstation":"Ernakulam Jn(ERS)",
         "returnstation":"Bangalore City Jn(SBC)",
         "hours":"10 hrs 40 min",
-        "seats":"AVAILABLE 435"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":435
     },
     {
         "id":20,
@@ -487,7 +493,8 @@
         "departstation":"Ernakulam Jn(ERS)",
         "returnstation":"Yeswantpur Jn(YPR)",
         "hours":"12 hrs 15 min",
-        "seats":"AVAILABLE 725"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":725
     },
     {
         "id":21,
@@ -510,7 +517,8 @@
         "departstation":"Tambaram (TBM)",
         "returnstation":"Secunderabad Jn(SC)",
         "hours":"13 hrs 25 min",
-        "seats":"AVAILABLE 437"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":437
     },
     {
         "id":22,
@@ -533,7 +541,8 @@
         "departstation":"Tambaram (TBM)",
         "returnstation":"Secunderabad Jn(SC)",
         "hours":"13 hrs 25 min",
-        "seats":"AVAILABLE 332"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":332
     },
     {
         "id":23,
@@ -556,7 +565,8 @@
         "departstation":"Chennai Cental (MA)",
         "returnstation":"Secunderabad Jn(SC)",
         "hours":"11 hrs 30 min",
-        "seats":"AVAILABLE 399"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":399
     },
     {
         "id":24,
@@ -579,7 +589,8 @@
         "departstation":"Chennai Cental (MA)",
         "returnstation":"Secunderabad Jn(SC)",
         "hours":"11 hrs 30 min",
-        "seats":"AVAILABLE 8"
+        "seat_avalilablity":"AVAILABLE",
+        "seats":8
     },
     {
         "id":25,
@@ -602,7 +613,8 @@
         "departstation":"New Delhi (NDLS)",
         "returnstation":"Kalyan Jn(KYN)",
         "hours":"25 hrs 2 min",
-        "seats":"RLWL 1 "
+        "seat_avalilablity":"AVAILABLE",
+        "seats":5
     },
     {
         "id":26,
@@ -625,7 +637,8 @@
         "departstation":"New Delhi (NDLS)",
         "returnstation":"Kalyan Jn(KYN)",
         "hours":"25 hrs 2 min",
-        "seats":"AVAILABLE 31 "
+        "seat_avalilablity":"AVAILABLE",
+        "seats":31
     },
     {
         "id":27,
@@ -648,7 +661,8 @@
         "departstation":"New Delhi (NDLS)",
         "returnstation":"Mumbai Central(MMCT)",
         "hours":"15 hrs 40 min",
-        "seats":"AVAILABLE 404 "
+        "seat_avalilablity":"AVAILABLE",
+        "seats":404
     },
 
     {
@@ -659,7 +673,7 @@
         "to":"Mumbai",
         "category_id":2,
         "cityid":6,
-        "class":"2 AC",
+        "class":"2AC",
         "passengers":"",
         "trip type":"",
         "depart":"Tue Feb 22,2022",
@@ -672,7 +686,8 @@
         "departstation":"Trivandrum Cntrl (TVC)",
         "returnstation":"LokManyatilak T(TTL)",
         "hours":"31 hrs 30 min",
-        "seats":"AVAILABLE 89 "
+        "seat_avalilablity":"AVAILABLE",
+        "seats":89
     },
     {
         "id":29,
@@ -695,7 +710,8 @@
         "departstation":"Trivandrum Cntrl (TVC)",
         "returnstation":"LokManyatilak T(TTL)",
         "hours":"31 hrs 30 min",
-        "seats":"AVAILABLE 45 "
+        "seat_avalilablity":"AVAILABLE",
+        "seats":45
     },
     {
         "id":30,
@@ -705,7 +721,7 @@
         "to":"Bangalore",
         "category_id":3,
         "cityid":5,
-        "class":"AC_sleeper",
+        "class":"Non_AC_sleeper",
         "passengers":"",
         "trip type":"",
         "depart":"Mon Jan 28,2022",
@@ -774,7 +790,7 @@
         "to":"Pune",
         "category_id":3,
         "cityid":7,
-        "class":"AC_sleeper",
+        "class":"AC_semi_sleeper",
         "passengers":"",
         "trip type":"",
         "depart":"Mon Jan 28,2022",
@@ -1070,7 +1086,7 @@
         "hours":"2 hrs 30 min",
         "travel_mode":"2 Flights",
         "desc":"People in love, join a road trip to Ooty! Walk up to the highest peak of the Nilgiri mountains! Visit the Ooty Botanical Gardens for a blissful time.",
-        "Day plan":[
+        "Day_plan":[
             {
                 "day_1":"14 Mar,Mon",
                 "day_2":"15 Mar,Tue",
@@ -1116,7 +1132,7 @@
         "hours":"2 hrs 30 min",
         "travel_mode":"2 Flights",
         "desc":"People in love, join a road trip to Ooty and coorg! Walk up to the highest peak of the Nilgiri mountains and explore cofee planations of Coorg! Visit the Ooty Botanical Gardens for a blissful time mixed with serene beauty of Coorg.",
-        "Day plan":[
+        "Day_plan":[
             {
                 "day_1":"14 Mar,Mon",
                 "day_2":"15 Mar,Tue",
@@ -1167,7 +1183,7 @@
         "hours":"2 hrs 30 min",
         "travel_mode":"2 Flights",
         "desc":"A flight and hotel only package. Customize the package from a pool of optional activities to make your holiday memorable! From adventure activities to heritage walks, your beach vacay comes with a host of optional activities.",
-        "Day plan":[
+        "Day_plan":[
             {
                 "day_1":"14 Mar,Mon",
                 "day_2":"15 Mar,Tue",
@@ -1215,7 +1231,7 @@
         "hours":"2 hrs 30 min",
         "travel_mode":"2 Flights",
         "desc":"Photo-shoot in Gangtok | Complimentary Zoomin Photobook | Romantic Candlelit dinner | Toy train ride ",
-        "Day plan":[
+        "Day_plan":[
             {
                 "day_1":"6 Mar,Sun",
                 "day_2":"7 Mar,Mon",
@@ -1444,7 +1460,7 @@
         "type_name":"Beaches",
         "name":"Goa",
         "title":"Popular for Beaches & Nightlife",
-        "description":"Popularly known as India’s party capital, Goa seduces travellers from all around the globe with its boho beaches, ancient churches, majestic forts and unbeatable nightlife!",
+        "description":"Popularly known as India’s party capital, Goa enlightens travellers from all around the globe with its boho beaches, ancient churches, majestic forts and unbeatable nightlife!",
         "image_gallery":["https://i.ibb.co/MRF3VT8/Goa-holiday.jpg"]
     },
 
