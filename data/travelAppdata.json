@@ -903,14 +903,14 @@
                 "room_id":6,
                 "room_type":"Superior Room - Twin Beds",
                 "breakfast_availability":"Room only",
-                "price":"₹4771"
+                "price":4771
 
             },
             {
                 "room_id":7,
                 "room_type":"Superior Room - Double Bed",
                 "breakfast_availability":"Room with breakfast",
-                "price":"₹8019"
+                "price":8019
 
             }
         ],
@@ -950,14 +950,14 @@
                 "room_id":8,
                 "room_type":"Standard King/Twin Room Online",
                 "breakfast_availability":"Room only",
-                "price":"₹3426"
+                "price":3426
 
             },
             {
                 "room_id":9,
                 "room_type":"Standard King/ twin Room Exclusive",
                 "breakfast_availability":"Room with breakfast",
-                "price":"₹3949"
+                "price":3949
 
             }
         ],
@@ -997,21 +997,21 @@
                 "room_id":1,
                 "room_type":"premium",
                 "breakfast_availability":"Room with breakfast",
-                "price":"₹4771"
+                "price":4771
 
             },
             {
                 "room_id":2,
                 "room_type":"premiur Queen Room",
                 "breakfast_availability":"Room only",
-                "price":"₹5191"
+                "price":5191
 
             },
             {
                 "room_id":3,
                 "room_type":"Deluxe Room",
                 "breakfast_availability":"Room with breakfast",
-                "price":"₹5332"
+                "price":5332
 
             }
         ],
@@ -1051,14 +1051,14 @@
                 "room_id":4,
                 "room_type":"Superior Charm City View Twin Bed",
                 "breakfast_availability":"Room only",
-                "price":"₹5400"
+                "price":5400
 
             },
             {
                 "room_id":5,
                 "room_type":"Dulexe Delight City View Twin Bed",
                 "breakfast_availability":"Room with breakfast",
-                "price":"₹6300"
+                "price":6300
 
             }
         ],
@@ -1296,7 +1296,7 @@
         "hours":"2 hrs 30 min",
         "travel_mode":"2 Flights",
         "desc":"Photo-shoot in Gangtok | Complimentary Zoomin Photobook | Toy train ride ",
-        "Day plan":[
+        "Day_plan":[
             {
                 "day_1":"6 Mar,Sun",
                 "day_2":"7 Mar,Mon",
@@ -1357,7 +1357,7 @@
         "hours":"2 hrs 30 min",
         "travel_mode":"2 Flights",
         "desc":" Royal Stay Experience at Taj | Visit Sikandara - the Mausoleum of Emperor Akbar | Visit to Swaminarayan Akshardham, a spiritual-cultural campus in New Delhi | Explore the prominent Monuments of Pink City ",
-        "Day plan":[
+        "Day_plan":[
             {
                 "day_1":"6 Mar,Sun",
                 "day_2":"7 Mar,Mon",

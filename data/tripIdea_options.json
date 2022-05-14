@@ -1,34 +1,44 @@
 
 [
     {
-        "id":1,
-        "name":"Hill Stations"
+        "trip_id":1,
+        "name":"Hill Stations",
+        "desc":" Breathe in the fresh mountain air, treat your eyes to the spectacular views and lose yourself in the charming ambience to feel refreshed from within."
     },
     {
-        "id":2,
-        "name":"Beaches"
+        "trip_id":2,
+        "name":"Beaches",
+        "desc":"Must Visit Beaches in the World for Your Next Trip to create magical moments by the shore. Watch the sunset on the beach and sway to the tunes of happening parties."
     },
     {
-        "id":3,
-        "name":"Historical Monuments"
+        "trip_id":3,
+        "name":"Historical Monuments",
+        "desc":"Explore historical places & countless ideas for an epic break and make way to explore the prominent monuments, streets, architectures and UNESCO recognized sites"
     },
     {
-        "id":4,
-        "name":"HoneyMoon Places"
+        "trip_id":4,
+        "name":"HoneyMoon Places",
+        "desc":"A serene location packed with passionate experiences make up the best honeymoon places. Treat your partner to candlelight dinners under the starlit sky."
     },
     {
-        "id":5,
-        "name":"Holy places"
+        "trip_id":5,
+        "name":"Holy places",
+        "desc":"Take a break from your busy routine and seek divine blessings."
     },
     {
-        "id":6,
-        "name":"Adventure places"
+        "trip_id":6,
+        "name":"Adventure places",
+        "desc":"Explore the adventure sports, offering you camping,rafting,trekking and much more."
+
     },
     {
-        "id":7,
-        "name":"Restaurants"
+        "trip_id":7,
+        "name":"Restaurants",
+        "desc":"Enjoy the best foods from highly rated restaurants"
+
     },
     {
-        "id":8,
-        "name":"Peaceful Destinations"
+        "trip_id":8,
+        "name":"Peaceful Destinations",
+        "desc":"Relax and enjoy the beauty of nature."
     }]

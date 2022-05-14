@@ -40,6 +40,23 @@ app.get('/type/:id',(req,res) => {
     })
 })
 
+//Get trip idea description
+app.get('/trip_id/:id',(req,res) => {
+    let tripid= Number(req.params.id)
+    
+    query={}
+    if(name){
+        query = {"trip_id":tripid}
+    }  
+   
+    db.collection('tripidea_options').find(query).toArray((err,result) =>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+
+
 // Load from destination dropdown
 app.get('/fromDestination',(req,res) => {  
    
@@ -80,6 +97,10 @@ app.get('/flightsearch/1',(req,res) => {
     else if(to_destination){
         query = {to:to_destination,"category_id":categoryId}
     }
+    else {
+        query = {"category_id":categoryId}
+    }
+    
     
     db.collection('traveldata').find(query).toArray((err,result) =>{
         if(err) throw err;
@@ -182,6 +203,10 @@ app.get('/trainsearch/2',(req,res) => {
     else if(to_destination){
         query = {to:to_destination,"category_id":categoryId}
     }
+    else {
+        query = {"category_id":categoryId}
+    }
+    
     
     db.collection('traveldata').find(query).toArray((err,result) =>{
         if(err) throw err;
@@ -248,6 +273,9 @@ app.get('/bussearch/3',(req,res) => {
     }
     else if(to_destination){
         query = {to:to_destination,"category_id":categoryId}
+    }
+    else{
+        query = {"category_id":categoryId}
     }
     
     db.collection('traveldata').find(query).toArray((err,result) =>{
@@ -334,7 +362,14 @@ app.get('/hotelsearch/4',(req,res) => {
     else if(city && guests){
         query = {cityid:city,guests:guests,"category_id":categoryId}
     }
-    
+    else if(city)
+    {
+        query = {cityid:city,"category_id":categoryId}
+    }
+    else
+    {
+        query = {"category_id":categoryId}
+    }
     db.collection('traveldata').find(query).toArray((err,result) =>{
         if(err) throw err;
         res.send(result)
@@ -401,31 +436,7 @@ app.get('/filter_search/4',(req,res) => {
     })
 })
 
-// filter wrt cost and rating
-// app.get('/filter/4',(req,res) => {
-//     let sort = {price:1}
-//     let categoryId  = 4 
-//     let lprice = Number(req.query.lprice)
- 
-//     let hprice = Number(req.query.hprice)
-//     let rating = Number(req.query.rating)
-//     let query = {}
-//     if(lprice&hprice&rating){
-//         query = {"category_id":categoryId,"rating":rating,
-         
-//             $and:[{price:{$gt:lprice,$lt:hprice}}]
-//         }
-//     }  
-//     if(req.query.sort){
-//         sort = {price:req.query.sort,"category_id":categoryId}
-//     }
-          
 
-//     db.collection('traveldata').find(query).sort(sort).toArray((err,result) =>{
-//         if(err) throw err;
-//         res.send(result)
-//     })
-// })
 
 //holiday packages search
 app.get('/holiday_packagesearch/5',(req,res) => {
@@ -444,6 +455,9 @@ app.get('/holiday_packagesearch/5',(req,res) => {
     }
     else if(from){
         query = {from:from,"category_id":categoryId}
+    }
+    else {
+        query = {"category_id":categoryId}
     }
     
     db.collection('traveldata').find(query).toArray((err,result) =>{
